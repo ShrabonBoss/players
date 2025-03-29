@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
 @Component
 public class PlayerServiceImpl implements PlayerService {
 
-    private  PlayerRepository playerRepository;
+    private final PlayerRepository playerRepository;
 
     @Autowired
     public PlayerServiceImpl(PlayerRepository playerRepository) {
@@ -26,7 +26,7 @@ public class PlayerServiceImpl implements PlayerService {
         return player;
     }
 
-    public List<Player> getAllPlayers() {
+    public List<Player> getPlayers() {
         return playerRepository.findAll();
     }
 

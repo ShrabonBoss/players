@@ -10,7 +10,7 @@ public interface PlayerService {
 
     public Player addPlayer(Player player);
 
-    public List<Player> getAllPlayers();
+    public List<Player> getPlayers();
 
     public List<Player> getPlayersByTeam(String teamName);
 
