@@ -27,6 +27,10 @@ public class Player {
     private Double xA;
     private String team;
 
+    public Player(String name) {
+        this.name = name;
+    }
+
 
     public Player(String name, String nation, String position, Integer age, Integer mp, Integer starts, Double minutes, Double goals, Double assists, Double pk, Double yellowCards, Double redCards, Double xG, Double xA, String team) {
         this.name = name;

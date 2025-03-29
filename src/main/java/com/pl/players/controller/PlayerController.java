@@ -21,11 +21,6 @@ public class PlayerController {
     }
 
     @GetMapping
-    public List<Player> getAllPlayers() {
-        return playerService.getPlayers();
-    }
-
-    @GetMapping
     public List<Player> getPlayers(
             @RequestParam(required = false) String teamName,
             @RequestParam(required = false) String name,
